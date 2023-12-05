@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Wymagane logowanie"
+AuthUserFile "E:\xampp\htdocs\workshop\unauthorised\files\.htpasswd"
+Require valid-user

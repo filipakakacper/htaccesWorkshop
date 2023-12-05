@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /workshop/seo-friendly/
+
+  RewriteRule ^user/([0-9]+)/([a-zA-Z]+) index.php?mod=$1&id=$2&view=$3 [NC,L]
+
+  #RewriteCond %{REQUEST_FILENAME} !-f
+  #RewriteCond %{REQUEST_FILENAME} !-d
+
+  #RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
